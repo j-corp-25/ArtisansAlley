@@ -1,0 +1,325 @@
+[
+    {
+      "_id": "1",
+      "artisan": "1",
+      "title": "Handcrafted Leather Wallet",
+      "category": "Accessories",
+      "description": "A finely crafted leather wallet with multiple card slots and a vintage finish.",
+      "details": {
+        "material": "Genuine Leather",
+        "color": "Brown",
+        "dimensions": "4.5 x 3.7 inches"
+      },
+      "tags": [
+        "Handmade",
+        "Leather",
+        "Durable",
+        "Compact",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 79.99
+      },
+      "artisan_info": {
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "phone": "123-456-7890"
+      },
+      "images": ["wallet1.jpg", "wallet2.jpg", "wallet3.jpg"],
+      "isFeatured": false,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "2",
+      "artisan": "2",
+      "title": "Ceramic Pottery Vase",
+      "category": "Home Decor",
+      "description": "An elegant ceramic vase perfect for adding a touch of style to any room.",
+      "details": {
+        "material": "Ceramic",
+        "color": "Blue with glaze",
+        "dimensions": "8 inches tall, 5-inch diameter"
+      },
+      "tags": [
+        "Handmade",
+        "Ceramic",
+        "Glazed",
+        "Decorative",
+        "Waterproof"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 45.00
+      },
+      "artisan_info": {
+        "name": "Jane Smith",
+        "email": "janesmith@example.com",
+        "phone": "234-567-8901"
+      },
+      "images": ["vase1.jpg", "vase2.jpg", "vase3.jpg"],
+      "isFeatured": true,
+      "createdAt": "2024-01-02T00:00:00.000Z",
+      "updatedAt": "2024-01-02T00:00:00.000Z"
+    },
+    {
+      "_id": "3",
+      "artisan": "3",
+      "title": "Handwoven Wool Rug",
+      "category": "Home Decor",
+      "description": "A beautiful handwoven wool rug with a traditional pattern and vibrant colors.",
+      "details": {
+        "material": "Wool",
+        "color": "Red, Blue, Green",
+        "dimensions": "5 x 7 feet"
+      },
+      "tags": [
+        "Handmade",
+        "Wool",
+        "Durable",
+        "Decorative",
+        "Traditional"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 299.99
+      },
+      "artisan_info": {
+        "name": "Alice Johnson",
+        "email": "janedoe@email.com",
+        "phone": "345-678-9012"
+        },
+        "images": ["rug1.jpg", "rug2.jpg", "rug3.jpg"],
+        "isFeatured": true,
+        "createdAt": "2024-01-03T00:00:00.000Z",
+        "updatedAt": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "_id": "4",
+      "artisan": "4",
+      "title": "Handcrafted Wooden Bowl",
+      "category": "Home Decor",
+      "description": "A beautifully handcrafted wooden bowl made from reclaimed wood.",
+      "details": {
+        "material": "Reclaimed Wood",
+        "color": "Natural Wood",
+        "dimensions": "10-inch diameter, 4-inch height"
+      },
+      "tags": [
+        "Handmade",
+        "Wood",
+        "Durable",
+        "Decorative",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 59.99
+      },
+      "artisan_info": {
+        "name": "Bob Brown",
+        "email": "johnsmith@email.com",
+        "phone": "456-789-0123"
+        },
+        "images": ["bowl1.jpg", "bowl2.jpg", "bowl3.jpg"],
+        "isFeatured": false,
+        "createdAt": "2024-01-04T00:00:00.000Z",
+        "updatedAt": "2024-01-04T00:00:00.000Z"
+    },
+    {
+      "_id": "5",
+      "artisan": "5",
+      "title": "Handcrafted Leather Tote Bag",
+      "category": "Accessories",
+      "description": "A stylish and durable leather tote bag with a spacious interior and multiple pockets.",
+      "details": {
+        "material": "Genuine Leather",
+        "color": "Black",
+        "dimensions": "14 x 12 x 6 inches"
+      },
+      "tags": [
+        "Handmade",
+        "Leather",
+        "Durable",
+        "Spacious",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 149.99
+      },
+      "artisan_info": {
+        "name": "Sarah White",
+        "email": "sarahwhite@email.com",
+        "phone": "567-890-1234"
+        },
+        "images": ["tote1.jpg", "tote2.jpg", "tote3.jpg"],
+        "isFeatured": true,
+        "createdAt": "2024-01-05T00:00:00.000Z",
+        "updatedAt": "2024-01-05T00:00:00.000Z"
+    },
+    {
+      "_id": "6",
+      "artisan": "6",
+      "title": "Handcrafted Wooden Coasters",
+      "category": "Home Decor",
+      "description": "A set of 4 handcrafted wooden coasters made from reclaimed wood.",
+      "details": {
+        "material": "Reclaimed Wood",
+        "color": "Natural Wood",
+        "dimensions": "4-inch diameter, 0.5-inch height"
+      },
+      "tags": [
+        "Handmade",
+        "Wood",
+        "Durable",
+        "Decorative",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 29.99
+      },
+      "artisan_info": {
+        "name": "Tom Green",
+        "email": "tomsmith@email.com",
+        "phone": "678-901-2345"
+        },
+        "images": ["coaster1.jpg", "coaster2.jpg", "coaster3.jpg"],
+        "isFeatured": false,
+        "createdAt": "2024-01-06T00:00:00.000Z",
+        "updatedAt": "2024-01-06T00:00:00.000Z"
+    },
+    {
+      "_id": "7",
+      "artisan": "7",
+      "title": "Handwoven Cotton Throw Blanket",
+      "category": "Home Decor",
+      "description": "A soft and cozy handwoven cotton throw blanket with a traditional pattern and fringed edges.",
+      "details": {
+        "material": "Cotton",
+        "color": "Red, Blue, Green",
+        "dimensions": "50 x 60 inches"
+      },
+      "tags": [
+        "Handmade",
+        "Cotton",
+        "Soft",
+        "Cozy",
+        "Traditional"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 99.99
+      },
+      "artisan_info": {
+        "name": "Mary Blue",
+        "email": "marysmith@email.com",
+        "phone": "789-012-3456"
+        },
+        "images": ["blanket1.jpg", "blanket2.jpg", "blanket3.jpg"],
+        "isFeatured": true,
+        "createdAt": "2024-01-07T00:00:00.000Z",
+        "updatedAt": "2024-01-07T00:00:00.000Z"
+    },
+    {
+      "_id": "8",
+      "artisan": "8",
+      "title": "Handcrafted Ceramic Mug",
+      "category": "Home Decor",
+      "description": "A beautifully handcrafted ceramic mug with a unique glaze and comfortable handle.",
+      "details": {
+        "material": "Ceramic",
+        "color": "Blue with glaze",
+        "dimensions": "4-inch height, 3-inch diameter"
+      },
+      "tags": [
+        "Handmade",
+        "Ceramic",
+        "Glazed",
+        "Decorative",
+        "Functional"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 19.99
+      },
+      "artisan_info": {
+        "name": "David Brown",
+        "email": "davidbrown@email.com",
+        "phone": "890-123-4567"
+        },
+        "images": ["mug1.jpg", "mug2.jpg", "mug3.jpg"],
+        "isFeatured": false,
+        "createdAt": "2024-01-08T00:00:00.000Z",
+        "updatedAt": "2024-01-08T00:00:00.000Z"
+    },
+    {
+      "_id": "9",
+      "artisan": "9",
+      "title": "Handcrafted Leather Journal",
+      "category": "Accessories",
+      "description": "A beautifully handcrafted leather journal with blank pages and a vintage finish.",
+      "details": {
+        "material": "Genuine Leather",
+        "color": "Brown",
+        "dimensions": "6 x 8 inches"
+      },
+      "tags": [
+        "Handmade",
+        "Leather",
+        "Durable",
+        "Functional",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 39.99
+      },
+      "artisan_info": {
+        "name": "Emily Green",
+        "email": "emilyg@email.com",
+        "phone": "901-234-5678"
+        },
+        "images": ["journal1.jpg", "journal2.jpg", "journal3.jpg"],
+        "isFeatured": true,
+        "createdAt": "2024-01-09T00:00:00.000Z",
+        "updatedAt": "2024-01-09T00:00:00.000Z"
+    },
+    {
+      "_id": "10",
+      "artisan": "10",
+      "title": "Handcrafted Wooden Picture Frame",
+      "category": "Home Decor",
+      "description": "A beautifully handcrafted wooden picture frame made from reclaimed wood.",
+      "details": {
+        "material": "Reclaimed Wood",
+        "color": "Natural Wood",
+        "dimensions": "5 x 7 inches"
+      },
+      "tags": [
+        "Handmade",
+        "Wood",
+        "Durable",
+        "Decorative",
+        "Eco-Friendly"
+      ],
+      "price": {
+        "currency": "USD",
+        "amount": 24.99
+      },
+      "artisan_info": {
+        "name": "Michael White",
+        "email": "mwhite@email.com",
+        "phone": "012-345-6789"
+        },
+        "images": ["frame1.jpg", "frame2.jpg", "frame3.jpg"],
+        "isFeatured": false,
+        "createdAt": "2024-01-10T00:00:00.000Z",
+        "updatedAt": "2024-01-10T00:00:00.000Z"
+    }
+
+
+
+  ]
