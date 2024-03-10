@@ -1,5 +1,5 @@
 import '@/assets/styles/globals.css'
-
+import Navbar from '@/components/Navbar'
 export const metadata = {
   title: 'ArtisansAlley | Find the best artisans in your area',
   description: 'Find your local artisans and support your local community',
@@ -12,7 +12,10 @@ const MainLayout = ({ children }) => {
   return (
     <html lang='en'>
       <body>
-        <div>{children}</div>
+        <header>
+          <Navbar />
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   )
