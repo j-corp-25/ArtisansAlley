@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaPalette, FaRuler, FaUser } from "react-icons/fa"
+import { FaPalette, FaRuler, FaUser, FaMapMarkerAlt } from "react-icons/fa"
 
 const CreationBlock = ({ creation }) => {
     return (
@@ -23,7 +23,7 @@ const CreationBlock = ({ creation }) => {
             ${creation.price.amount}
           </h3>
 
-          <div className='flex justify-center gap-4 text-gray-500 mb-4'>
+          <div className='flex justify-normal gap-4 text-gray-500 mb-4'>
             <p>
              <FaPalette/> {creation.details.material}
             </p>
@@ -39,6 +39,7 @@ const CreationBlock = ({ creation }) => {
 
               <FaUser className='text-lg text-orange-700' />
               <span className='text-orange-700'>{creation.artisan_info.name} | </span>
+            <FaMapMarkerAlt className='text-lg text-orange-700' />
               <span className='text-orange-700'>{creation.artisan_info.location}</span>
             </div>
             <Link
