@@ -11,7 +11,7 @@ const CreationsPage = () => {
         ) : (
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
             {creations.map((creation) => (
-              <CreationBlock key={creation.id} creation={creation} />
+              <CreationBlock key={creation._id} creation={creation} />
             ))}
           </div>
         )}
