@@ -1,6 +1,25 @@
-import creations from '@/creations.json'
+
 import CreationBlock from '@/components/CreationBlock'
-const CreationsPage = () => {
+
+
+const fetchCreations = async () =>{
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/creations`,{
+      cache: 'no-store',
+    })
+    if (!response.ok) {
+      throw new Error('Something went wrong')
+    }
+    return response.json()
+  } catch (error) {
+    console.log(error)
+
+  }
+}
+
+const CreationsPage = async () => {
+  const creations = await fetchCreations()
+  console.log(creations)
   return (
     <section className='px-4 py-6'>
       <div className='container-xl lg:container m-auto px-4 py-6'>

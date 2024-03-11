@@ -1,7 +1,23 @@
-import creations from '@/creations.json'
 import CreationBlock from './CreationBlock'
 import Link from 'next/link'
-const HomeCreations = () => {
+
+const fetchCreations = async () =>{
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/creations`,{
+      cache: 'no-store',
+    })
+    if (!response.ok) {
+      throw new Error('Something went wrong')
+    }
+    return response.json()
+  } catch (error) {
+    console.log(error)
+
+  }
+}
+
+const HomeCreations = async () => {
+  const creations = await fetchCreations()
   const recentCreations = creations
     .sort(() => Math.random() - Math.random())
     .slice(0, 3)
