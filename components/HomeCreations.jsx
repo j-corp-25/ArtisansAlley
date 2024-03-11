@@ -19,7 +19,7 @@ const HomeCreations = () => {
               </p>
             ) : (
               recentCreations.map((creation) => (
-                <CreationBlock key={creation.id} creation={creation} />
+                <CreationBlock key={creation._id} creation={creation} />
               ))
             )}
           </div>
@@ -28,7 +28,7 @@ const HomeCreations = () => {
 
       <section className='m-auto max-w-lg my-10 px-6'>
         <Link
-          href='creations'
+          href='/creations'
           className='block bg-blue-500 text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700 text-xl font-bold'
         >
           View All Creations
