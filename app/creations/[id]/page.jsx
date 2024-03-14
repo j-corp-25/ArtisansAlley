@@ -50,8 +50,8 @@ const page = () => {
           </section>
           <section className='bg-pink-50'>
             <div className='container m-auto py-10 px-6'>
-              <div className='grid grid-cols-1 md:grid-cols-5 w-full gap-6'>
-                <main className='col-span-4'>
+              <div className='grid grid-cols-1 md:grid-cols-10 w-full gap-6'>
+                <main className='col-span-7'>
                   <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
                     <h1 className='text-3xl font-bold mb-4'>
                       {creation.title}
@@ -125,7 +125,7 @@ const page = () => {
                   </div>
                 </main>
 
-                <aside className='space-y-4'>
+                <aside className='space-y-4 col-span-3'>
                   <button className='bg-pink-500 hover:bg-pink-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center'>
                     <i className='fas fa-heart mr-2'></i> Favorite
                   </button>
