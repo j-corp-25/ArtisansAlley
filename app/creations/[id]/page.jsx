@@ -2,8 +2,10 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'next/navigation'
 import { fetchCreation } from '@/utils/getRequests'
-import { FaArrowLeft, FaHashtag } from 'react-icons/fa'
+import { FaArrowLeft, FaHashtag , FaShare,FaHeart, FaPaperPlane } from 'react-icons/fa'
 import CreationHeaderBG from '@/components/CreationHeaderBG'
+import CreationDetails from '@/components/CreationDetails'
+import Spinner from '@/components/Spinner'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -32,11 +34,13 @@ const page = () => {
 
   return (
     <>
+      {loading && <Spinner loading={loading} />}
       {!loading && creation && (
         <>
           <section>
             <CreationHeaderBG image={creation.images[0]} />
           </section>
+
 
           <section>
             <div class='container m-auto py-6 px-6'>
@@ -51,86 +55,15 @@ const page = () => {
           <section className='bg-pink-50'>
             <div className='container m-auto py-10 px-6'>
               <div className='grid grid-cols-1 md:grid-cols-10 w-full gap-6'>
-                <main className='col-span-7'>
-                  <div className='bg-white p-6 rounded-lg shadow-md text-center md:text-left'>
-                    <h1 className='text-3xl font-bold mb-4'>
-                      {creation.title}
-                    </h1>
-                    <div className='text-gray-500 mb-4 flex align-middle justify-center md:justify-start'>
-                      <i className='fa-solid fa-palette text-lg text-orange-700 mr-2'></i>
-                      <div className='text-orange-700 flex flex-col'>
-                        <span>{creation.artisan_info.name}</span>
-                        <span>{creation.artisan_info.location}</span>
-                      </div>
-                    </div>
 
-                    <h3 className='text-lg font-bold my-6 bg-gray-800 text-white p-2'>
-                      Pricing & Details
-                    </h3>
-
-                    <div className='flex flex-col md:flex-row items-center justify-between mb-4 gap-5'>
-                      <div>
-                        <div className='text-gray-500 mr-2 font-bold'>
-                          Price
-                        </div>
-                        <div className='text-2xl font-bold text-blue-500'>
-                          {creation.price.currency}
-                          {creation.price.amount}
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className='text-gray-500 mr-2 font-bold'>
-                          Material
-                        </div>
-                        <div className='text-2xl font-bold text-blue-500'>
-                          {creation.details.material}
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className='text-gray-500 mr-2 font-bold'>
-                          Color
-                        </div>
-                        <div className='text-2xl font-bold text-blue-500'>
-                          {creation.details.color}
-                        </div>
-                      </div>
-
-                      <div>
-                        <div className='text-gray-500 mr-2 font-bold'>
-                          Dimensions
-                        </div>
-                        <div className='text-2xl font-bold text-blue-500'>
-                          {creation.details.dimensions}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-                    <h3 className='text-lg font-bold mb-6'>
-                      Description & Craftsmanship
-                    </h3>
-                    <p className='text-gray-500 mb-4'>{creation.description}</p>
-                  </div>
-
-                  <div className='bg-white p-6 rounded-lg shadow-md mt-6'>
-                    <h3 className='text-lg font-bold mb-6'>Tags</h3>
-                    <div className='flex flex-wrap gap-4 text-green-600 mb-4'>
-                      {creation.tags.map((tag) => (
-                        <span>#{tag}</span>
-                      ))}
-                    </div>
-                  </div>
-                </main>
+              <CreationDetails creation={creation}/>
 
                 <aside className='space-y-4 col-span-3'>
                   <button className='bg-pink-500 hover:bg-pink-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center'>
-                    <i className='fas fa-heart mr-2'></i> Favorite
+                    <FaHeart className='mr-2'/> Favorite
                   </button>
                   <button className='bg-teal-500 hover:bg-teal-600 text-white font-bold w-full py-2 px-4 rounded-full flex items-center justify-center'>
-                    <i className='fas fa-share mr-2'></i> Share Craft
+                    <FaShare className='mr-2'/> Share Craft
                   </button>
 
                   {/* Contact Artisan Form */}
@@ -201,7 +134,7 @@ const page = () => {
                           className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline flex items-center justify-center'
                           type='submit'
                         >
-                          <i className='fas fa-paper-plane mr-2'></i> Send
+                          <FaPaperPlane className='mr-2'/> Send
                           Message to Artisan
                         </button>
                       </div>
