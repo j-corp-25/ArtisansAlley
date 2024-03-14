@@ -5,7 +5,7 @@ import Creation from '@/models/Creation'
 export const GET = async (request) => {
   try {
     await connectDB()
-    const creations = await Creation.find()
+    const creations = await Creation.find({})
     return new Response(JSON.stringify(creations), { status: 200 })
   } catch (error) {
     console.log(error)

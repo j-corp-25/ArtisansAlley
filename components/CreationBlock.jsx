@@ -6,7 +6,7 @@ const CreationBlock = ({ creation }) => {
   return (
     <div className='rounded-xl shadow-md relative'>
       <Image
-        src={creation.images[0]}
+        src={`/${creation.images[0]}`}
         alt={creation.title}
         style={{ aspectRatio: '1/1' }}
         sizes='100vw'

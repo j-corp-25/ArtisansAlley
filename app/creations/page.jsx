@@ -1,21 +1,7 @@
 
 import CreationBlock from '@/components/CreationBlock'
+import { fetchCreations } from '@/utils/getRequests'
 
-
-const fetchCreations = async () =>{
-  try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/creations`,{
-      cache: 'no-store',
-    })
-    if (!response.ok) {
-      throw new Error('Something went wrong')
-    }
-    return response.json()
-  } catch (error) {
-    console.log(error)
-
-  }
-}
 
 const CreationsPage = async () => {
   const creations = await fetchCreations()
