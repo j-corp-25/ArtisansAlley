@@ -1,9 +1,15 @@
-import React from 'react'
+import CreationForm from '@/components/CreationForm'
 
-const AddPage = () => {
+const AddCreationPage = () => {
   return (
-    <div>AddPage</div>
+    <section className='bg-blue-50'>
+      <div className='container m-auto max-w-4xl py-24'>
+        <div className='bg-white px-6 py-8 mb-4 shadow-md rounded-md border'>
+          <CreationForm />
+        </div>
+      </div>
+    </section>
   )
 }
 
-export default AddPage
+export default AddCreationPage
